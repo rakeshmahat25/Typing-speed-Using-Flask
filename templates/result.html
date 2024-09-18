@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Typing Speed Result</title>
+    <style>/* General Reset */
+        body, h1, p, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            color: #2c3e50; /* Dark blue */
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin: 15px 0;
+        }
+        
+        textarea {
+            width: 80%;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid #3498db; /* Blue border */
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            border-color: #2980b9; /* Darker blue */
+            outline: none;
+        }
+        
+        button {
+            background-color: #3498db; /* Blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        /* Result Page Styles */
+        .result-container {
+            text-align: center;
+            background-color: #ecf0f1; /* Light grey */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #3498db; /* Blue */
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <h1>Results</h1>
+    <p>Your typing speed: <strong>{{ speed }}</strong> w/sec</p>
+    <p>Errors: <strong>{{ errors }}</strong></p>
+    <a href="/">Try again</a>
+</body>
+</html>
